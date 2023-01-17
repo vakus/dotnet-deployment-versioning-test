@@ -1,0 +1,14 @@
+name: (TEST) Tag branch
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'autotag'
+      - uses: vakus/dotnet-deployment-versioning@main
+      
