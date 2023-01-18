@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: 'autotag'
-      - uses: vakus/dotnet-deployment-versioning@main
+      - uses: vakus/dotnet-deployment-versioning@fix-user-config-crash
       
