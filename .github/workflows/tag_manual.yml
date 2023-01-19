@@ -1,4 +1,4 @@
-name: (TEST) Tag branch - Blank user
+name: (TEST) Tag branch
 
 on:
   workflow_dispatch:
