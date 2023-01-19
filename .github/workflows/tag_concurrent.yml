@@ -1,0 +1,17 @@
+name: (TEST) Tag branch - Concurrent
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubutnu-20.04, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'autotag'
+      - uses: vakus/dotnet-deployment-versioning@fix-user-config-crash
+      
