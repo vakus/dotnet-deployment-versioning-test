@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dotnet_deployment_versioning_test</RootNamespace>
-    <AssemblyVersion>23.1.18.5</AssemblyVersion>
-    <FileVersion>23.1.18.5</FileVersion>
+    <AssemblyVersion>23.1.19.1</AssemblyVersion>
+    <FileVersion>23.1.19.1</FileVersion>
   </PropertyGroup>
 
 </Project>
