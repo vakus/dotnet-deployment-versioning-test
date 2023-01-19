@@ -1,0 +1,20 @@
+name: (TEST) Tag branch
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'autotag'
+      - uses: vakus/dotnet-deployment-versioning@fix-user-config-crash
+        with:
+          commit_username: ""
+          commit_email: ""
+      
